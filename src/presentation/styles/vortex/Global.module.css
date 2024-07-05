@@ -1,0 +1,22 @@
+.solid {
+    border-top: 1.2px solid #707070;
+    z-index: 10;
+    width: 87%;
+    margin-top: 3.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.sectionContent{
+    font-weight: 300 !important;
+}
+
+.infoCard{
+    border-top-left-radius: 6.5rem;
+    width: 17rem;
+    height: 18.4rem;
+}
+
+.contentCard{
+    font-weight: 300 !important;
+    font-size: 0.9rem;
+}
