@@ -1,0 +1,12 @@
+.logoGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .logoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

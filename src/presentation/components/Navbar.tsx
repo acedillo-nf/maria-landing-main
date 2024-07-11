@@ -25,6 +25,9 @@ const Navbar = () => {
         <a href="/" className="p-2 text-md font-bold leading-6 text-white">
           MarIA Sales
         </a>
+        <a href="/" className="p-2 text-md font-bold leading-6 text-white">
+          Our NFT collection
+        </a>
       </div>
       <aside className="flex items-center gap-4">
       </aside>

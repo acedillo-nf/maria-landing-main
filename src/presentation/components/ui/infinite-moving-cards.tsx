@@ -1,24 +1,30 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
+"use client"
+import React, { useEffect, useState, useRef } from "react";
 import { cn } from "../../../../utils/cn";
 import Image from "next/image";
 
-export const InfiniteMovingCards = ({
-  imagePath,
-  direction = "left",
-  speed = "fast",
-  pauseOnHover = true,
-  className,
-}: {
-  imagePath: string;
+interface ImageInfo {
+  src: string;
+  alt: string;
+}
+
+interface InfiniteMovingCardsProps {
+  images: ImageInfo[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+}
+
+export const InfiniteMovingCards: React.FC<InfiniteMovingCardsProps> = ({
+  images,
+  direction = "left",
+  speed = "fast",
+  pauseOnHover = true,
+  className,
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     addAnimation();
@@ -82,14 +88,14 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {[...Array(5)].map((_, idx) => (
+        {images.map((image, idx) => (
           <li
             className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px]"
             key={idx}
           >
             <Image
-              src={imagePath}
-              alt="Netfy Logo"
+              src={image.src}
+              alt={image.alt}
               width={300}
               height={100}
               objectFit="contain"

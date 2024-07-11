@@ -9,6 +9,7 @@ import FooterSection from "@/presentation/pages/footer/FooterSection";
 import CopyrightSection from "@/presentation/pages/copyright/CopyrightSection";
 import Navbar from '@/presentation/components/Navbar';
 import { InfiniteMovingCards } from '@/presentation/components/ui/infinite-moving-cards';
+import LogoGrid from '@/presentation/components/ui/logo-grid';
 
 const Home = () => {
   return (
@@ -18,11 +19,7 @@ const Home = () => {
             <HeroSection/>
             <VortexSection/>
             <VelocitySection/>
-            <InfiniteMovingCards
-  imagePath="/netfy-logo.png"
-  direction="right"
-  speed="slow"
-/>
+            <LogoGrid />
             <ContactUsSection/>
             <FooterSection/>
             <CopyrightSection />
