@@ -10,6 +10,7 @@ import CopyrightSection from "@/presentation/pages/copyright/CopyrightSection";
 import Navbar from '@/presentation/components/Navbar';
 import { InfiniteMovingCards } from '@/presentation/components/ui/infinite-moving-cards';
 import LogoGrid from '@/presentation/components/ui/logo-grid';
+import IntegrationsLandingPage from '@/presentation/components/ui/integrations';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
             <VortexSection/>
             <VelocitySection/>
             <LogoGrid />
+            <IntegrationsLandingPage />
             <ContactUsSection/>
             <FooterSection/>
             <CopyrightSection />

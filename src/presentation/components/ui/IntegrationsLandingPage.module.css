@@ -1,0 +1,29 @@
+.integrations-container {
+  max-width: 100%;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.integrations-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.integrations-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.integrations-row {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 640px) {
+  .integrations-row {
+    gap: 1rem;
+  }
+}
