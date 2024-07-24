@@ -1,38 +1,42 @@
 import React from 'react';
 import styles from "@/presentation/styles/vortex/Global.module.css";
 
-const FeatureCard: React.FC<{ title: string, content: string, icon: React.ReactNode }> = ({ title, content, icon }) => {
+interface FeatureCardProps {
+  title: string;
+  content: string;
+  icon: React.ReactNode;
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ title, content, icon }) => {
     return (
-        <div  className={`${styles.infoCard} relative bg-black text-white p-8 m-4 flex flex-col `}>
-            <div
-                className="absolute top-0 right-0 -mt-12 -mr-10 w-24 h-24 bg-[linear-gradient(190deg,rgba(76,30,133,1),rgba(117,57,150,1))] rounded-full flex items-center justify-center">
+        <div className={`${styles.infoCard} relative bg-black text-white p-8 m-4 flex flex-col`}>
+            <div className="absolute top-0 right-0 -mt-12 -mr-10 w-24 h-24 bg-[linear-gradient(190deg,rgba(76,30,133,1),rgba(117,57,150,1))] rounded-full flex items-center justify-center">
                 {icon}
             </div>
             <h2 className="text-2xl font-bold mt-8">{title}</h2>
-            <p  className={`${styles.contentCard} mt-3`}>{content}</p>
+            <p className={`${styles.contentCard} mt-3`}>{content}</p>
         </div>
     );
 };
 
-const MyComponent: React.FC = () => {
-    const infoCardsData = [
+const InfoCards: React.FC = () => {
+    const infoCardsData: FeatureCardProps[] = [
         {
             title: 'Fast',
             content: 'MarIA responds instantly to customers, detects issues during their stay, and ensures that each customer has a memorable experience.',
             icon: (
                 <svg width="38" height="32" viewBox="0 0 60 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M33.8571 3L57 26.1429L33.8571 49.2857M3 3L26.1429 26.1429L3 49.2857"
-                          stroke="url(#paint0_linear_3_96)" stroke-width="5.78571" stroke-linecap="round"
-                          stroke-linejoin="round"/>
+                          stroke="url(#paint0_linear_3_96)" strokeWidth="5.78571" strokeLinecap="round"
+                          strokeLinejoin="round"/>
                     <defs>
                         <linearGradient id="paint0_linear_3_96" x1="30" y1="3" x2="30" y2="49.2857"
                                         gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#B376F6"/>
-                            <stop offset="1" stop-color="#683191"/>
+                            <stop stopColor="#B376F6"/>
+                            <stop offset="1" stopColor="#683191"/>
                         </linearGradient>
                     </defs>
                 </svg>
-
             ),
         },
         {
@@ -76,7 +80,7 @@ const MyComponent: React.FC = () => {
 
     return (
         <div className="flex justify-center">
-            <div className="flex justify-between w-full px-28">
+            <div className="flex flex-col md:flex-row justify-between w-full px-4 md:px-28 items-center md:items-stretch">
                 {infoCardsData.map((card, index) => (
                     <FeatureCard
                         key={index}
@@ -90,4 +94,6 @@ const MyComponent: React.FC = () => {
     );
 };
 
-export default MyComponent;
+export default InfoCards;
+
+
