@@ -2,6 +2,7 @@
 import styles from '@/presentation/styles/hero/HeroSection.module.css';
 import {GlobeComponent} from "@/presentation/components/globe/GlobeComponent";
 import { useEffect, useState } from 'react';
+import { DirectionAwareHoverDemo } from './youtube-card';
 
 const HeroSection: React.FC = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -79,7 +80,7 @@ const HeroSection: React.FC = () => {
                             </div>
 
                             <div className=" w-1/2 h-[89%] pr-28">
-                                <GlobeComponent/>
+                                <DirectionAwareHoverDemo/>
                             </div>
                         </div>
                     </>
