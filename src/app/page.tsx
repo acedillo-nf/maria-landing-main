@@ -11,6 +11,7 @@ import Navbar from '@/presentation/components/Navbar';
 import { InfiniteMovingCards } from '@/presentation/components/ui/infinite-moving-cards';
 import LogoGrid from '@/presentation/components/ui/logo-grid';
 import IntegrationsLandingPage from '@/presentation/components/ui/integrations';
+import { CardHoverEffectDemo } from '@/presentation/pages/features/features';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
             <HeroSection/>
             <VortexSection/>
             <VelocitySection/>
+            <CardHoverEffectDemo/>
             <LogoGrid />
             <IntegrationsLandingPage />
             <ContactUsSection/>
