@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
                     onClick={() => window.open('https://calendar.app.google/ywZ6zNjrN1uWHXCs7', '_blank')}
                     >
                     <span
-                    className="relative inline-flex items-center justify-center w-full h-full px-6 py-3 bg-white dark:bg-gray-900 rounded-full transition-all ease-in duration-75 group-hover:bg-opacity-0">
+                    className="relative inline-flex items-center justify-center w-full h-full px-6 py-3 bg-white dark:bg-white dark:text-gray-900 hover:text-white rounded-full transition-all ease-in duration-75 group-hover:bg-opacity-0">
                     Empieza ahora
                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-2">
                     <path d="M3.29785 10.2979H15.7234M10.2872 4.86169L15.7234 10.2979L10.2872 15.734"

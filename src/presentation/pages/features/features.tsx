@@ -6,7 +6,7 @@ export function CardHoverEffectDemo() {
   return (
     
     <div className="max-w-5xl mx-auto px-8">
-        <h1 className="p-6 integrations-title text-4xl font-bold text-center mb-10">¿Qué puede hacer MarIA SALES?</h1>
+        <h1 className="p-6 integrations-title text-4xl font-bold text-center mb-10">¿Qué puede hacer MarIA por tu hotel?</h1>
       <HoverEffect items={projects} />
     </div>
   );

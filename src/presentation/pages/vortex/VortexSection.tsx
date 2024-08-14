@@ -18,16 +18,10 @@ export function VortexSection() {
                   </div>
 
                   <div className="md:col-span-1 flex flex-col justify-center items-start">
-                      <h2 className="text-4xl font-bold mb-5">Your AI Sales Agent</h2>
+                      <h2 className="text-4xl font-bold mb-5">Consultoría gratuita</h2>
 
                       <div className={`${styles.sectionContent} text-[0.96rem]`}>
-                          MarIA, the ideal virtual assistant for the hospitality sector,<br/>employs a combination of
-                          conversational and
-                          generative<br/>artificial intelligence. She manages interactions efficiently and<br/>automatically
-                          offers personalized service. Additionally,
-                          she<br/>communicates with teams through email notifications.<br/>Requests of greater
-                          importance are directed to the
-                          appropriate<br/>team member for quick processing.
+                      Contacta con un consultor experimentado y vive cómo la Inteligencia Artificial puede ayudarte a aumentar tus reservas hotelera. 
                       </div>
                       <hr className={styles.solid}/>
                       <button type="button"

@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { DirectionAwareHover } from "@/presentation/components/ui/direction-aware-hover";
 
 export function DirectionAwareHoverDemo() {
-    const imageUrl = "/netfy-icon.png";
+    const imageUrl = "/fondoyt.png";
     const videoUrl = "https://www.youtube.com/watch?v=AC_A-YYdM1E";
 
     return (

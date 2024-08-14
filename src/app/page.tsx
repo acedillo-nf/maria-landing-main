@@ -12,6 +12,8 @@ import { InfiniteMovingCards } from '@/presentation/components/ui/infinite-movin
 import LogoGrid from '@/presentation/components/ui/logo-grid';
 import IntegrationsLandingPage from '@/presentation/components/ui/integrations';
 import { CardHoverEffectDemo } from '@/presentation/pages/features/features';
+import MARIADetailedDashboard from '@/presentation/pages/features/features2';
+import MARIAKPIDashboard from '@/presentation/pages/features/kpis';
 
 const Home = () => {
   return (
@@ -22,7 +24,9 @@ const Home = () => {
             <VortexSection/>
             <VelocitySection/>
             <CardHoverEffectDemo/>
+            <MARIADetailedDashboard/>
             <LogoGrid />
+            <MARIAKPIDashboard/>
             <IntegrationsLandingPage />
             <ContactUsSection/>
             <FooterSection/>
