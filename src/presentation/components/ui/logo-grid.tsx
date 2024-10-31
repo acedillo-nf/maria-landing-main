@@ -7,21 +7,27 @@ interface Logo {
 }
 
 const logos: Logo[] = [
-    { src: "/casa-ofelia-logo.png", alt: "Casa Ofelia Logo" },
-    { src: "/logo-pepem-hd.webp", alt: "Pepem Logo" },
-    { src: "/mlh-logo.png", alt: "MLH Logo" },
+  { src: "/logo-pepem-hd.webp", alt: "Pepem Logo" },
   { src: '/logo-palace-resorts.png', alt: 'Palace Resorts Logo' },
   { src: '/hyatt-logo.png', alt: 'Hyatt Logo' },
 ];
 
 const LogoGrid: React.FC = () => {
   return (
-    <div className={styles.logoGrid}>
-      {logos.map((logo, index) => (
-        <div key={index} className={styles.logoItem}>
-          <Image src={logo.src} alt={logo.alt} width={100} height={100} />
-        </div>
-      ))}
+    <div className="max-w-5xl mx-auto px-8 py-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center">
+        {logos.map((logo, index) => (
+          <div key={index} className="flex items-center justify-center">
+            <Image 
+              src={logo.src} 
+              alt={logo.alt} 
+              width={100} 
+              height={100}
+              className="object-contain"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

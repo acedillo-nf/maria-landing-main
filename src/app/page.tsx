@@ -11,26 +11,29 @@ import Navbar from '@/presentation/components/Navbar';
 import { InfiniteMovingCards } from '@/presentation/components/ui/infinite-moving-cards';
 import LogoGrid from '@/presentation/components/ui/logo-grid';
 import IntegrationsLandingPage from '@/presentation/components/ui/integrations';
-import { CardHoverEffectDemo } from '@/presentation/pages/features/features';
+import { Features } from '@/presentation/pages/features/features';
 import MARIADetailedDashboard from '@/presentation/pages/features/features2';
 import MARIAKPIDashboard from '@/presentation/pages/features/kpis';
+import LastSection from '@/presentation/pages/lastsection';
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-white">
         <main>
           <Navbar/>
             <HeroSection/>
-            <VortexSection/>
-            <VelocitySection/>
-            <CardHoverEffectDemo/>
+            <Features/>
             <MARIADetailedDashboard/>
             <LogoGrid />
-            <MARIAKPIDashboard/>
-            <IntegrationsLandingPage />
+            <div className="bg-[#2c2e3a]">
+              <MARIAKPIDashboard/>
+            </div>
+            <div className="bg-[#2c2e3a]">
+              <IntegrationsLandingPage />
+            </div>
             <ContactUsSection/>
+            <LastSection/>
             <FooterSection/>
-            <CopyrightSection />
         </main>
     </div>
   );

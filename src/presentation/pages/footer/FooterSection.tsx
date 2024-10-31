@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-[#282a37] text-white py-28 px-4 md:pl-32 md:pr-24">
+        <footer className="bg-white text-[#2c2e3a] py-28 px-4 md:pl-32 md:pr-24">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="flex flex-col items-center md:items-start">
-                        <img src="/logo.png" alt="Netfy" className="mb-4"  style={{ height: '4.7rem' }} />
+                        <img src="/netfy-footer.png" alt="Netfy" className="mb-4" style={{ height: '4.7rem' }} />
                         <p className="text-center md:text-left text-sm">
                             We are a dynamic consultancy<br/>firm specializing in AI, Blockchain,<br/>and RPA (Robotic
                             Process<br/>
@@ -14,27 +14,27 @@ const Footer: React.FC = () => {
                         </p>
                     </div>
                     <div className="flex flex-col items-center md:items-start mb-8">
-                        <h3 className="text-3xl font-extrabold mb-6">Menu</h3>
+                        <h3 className="text-3xl font-extrabold mb-6 text-[#2c2e3a]">Menu</h3>
                         <ul className="space-y-3 text-sm">
-                            <li><a href="#" className="hover:underline">Home</a></li>
-                            <li><a href="#" className="hover:underline">About Us</a></li>
-                            <li><a href="#" className="hover:underline">Jobs</a></li>
-                            <li><a href="#" className="hover:underline">Blog</a></li>
-                            <li><a href="#" className="hover:underline">Contact Us</a></li>
-                            <li><a href="#" className="hover:underline">Privacy policy</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">Home</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">About Us</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">Jobs</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">Blog</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">Contact Us</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">Privacy policy</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col items-center md:items-start">
-                        <h3 className="text-3xl font-extrabold mb-6">Quick Links</h3>
+                        <h3 className="text-3xl font-extrabold mb-6 text-[#2c2e3a]">Quick Links</h3>
                         <ul className="space-y-3 text-sm">
-                            <li><a href="#" className="hover:underline">Blockchain</a></li>
-                            <li><a href="#" className="hover:underline">Artificial Intelligence</a></li>
-                            <li><a href="#" className="hover:underline">Robotic Process Automation</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">Blockchain</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">Artificial Intelligence</a></li>
+                            <li><a href="#" className="hover:underline text-[#2c2e3a]">Robotic Process Automation</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col items-center md:items-start">
-                        <h3 className="text-3xl font-extrabold mb-6">Contact</h3>
-                        <ul className="space-y-4 text-sm">
+                        <h3 className="text-3xl font-extrabold mb-6 text-[#2c2e3a]">Contact</h3>
+                        <ul className="space-y-4 text-sm text-[#2c2e3a]">
                             <li className="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512" style={{width: "1.4rem"}} className="mr-5">

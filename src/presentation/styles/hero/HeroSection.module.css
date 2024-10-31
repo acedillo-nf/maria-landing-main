@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background: url('/fondo.webp') no-repeat center center/cover;
+  background: url('/mujer-hero-2.png') no-repeat center center/cover;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -16,13 +16,14 @@
 
 .textIA {
   font-family: 'CustomHelvetica', serif;
+  color: #2c2e3a;
   font-size: 4.5rem;
   font-weight: bold;
   height: 6.0rem;
 }
 
 .gradientText {
-  background-image: linear-gradient(30deg, rgba(255, 45, 247, 1) -50%, rgba(0, 240, 255, 1) 100%);
+  background-image: linear-gradient(30deg, rgba(0, 240, 255, 1) 0%, rgba(0, 240, 255, 1) 100%);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -32,10 +33,11 @@
 }
 
 .description {
-  max-width: 55%;
+  max-width: 60%;
+  color: #2c2e3a;
   font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 1.7rem;
+  font-size: 2.5rem;
+  line-height: 1.4 rem;
   padding-bottom: 10px;
 }
 

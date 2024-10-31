@@ -17,8 +17,8 @@ interface ExpandableSectionProps {
           className="cursor-pointer flex justify-between items-center" 
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          <CardTitle>{title}</CardTitle>
-          {isExpanded ? <ChevronUp /> : <ChevronDown />}
+          <CardTitle className="text-[#2c2e3a]">{title}</CardTitle>
+          {isExpanded ? <ChevronUp className="text-[#06c7f4]" /> : <ChevronDown className="text-[#06c7f4]" />}
         </CardHeader>
         {isExpanded && <CardContent>{children}</CardContent>}
       </Card>
@@ -35,8 +35,8 @@ interface ExpandableSectionProps {
     <div className="flex items-start mb-4">
       <Icon className="mr-4 text-white flex-shrink-0" size={24} />
       <div>
-        <h3 className="font-semibold mb-1">{title}</h3>
-        <p className="text-sm text-white-600">{description}</p>
+        <h3 className="font-semibold mb-1 text-[#2c2e3a]">{title}</h3>
+        <p className="text-sm text-[#2c2e3a]">{description}</p>
       </div>
     </div>
   );
@@ -61,19 +61,19 @@ interface ExpandableSectionProps {
     ];
   
     return (
-      <div className="p-6 max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-4 text-whote">MARIA: Tu Asistente de Reservas con IA</h1>
+      <div className="p-6 bg-white max-w-4xl mx-auto">
+        <h1 className="text-3xl font-bold text-center mb-4 text-[#2c2e3a]">MARIA: Tu Asistente de Reservas con IA</h1>
         <p className="text-center mb-8 text-[#06c7f4]">
           Simplificando y optimizando el proceso de reserva de habitaciones en tu hotel.
         </p>
   
-        <ExpandableSection title="Plataforma de Asistencia Omnicanal">
-          <p className="mb-4">
+        <ExpandableSection  title="Plataforma de Asistencia Omnicanal">
+          <p className="mb-4 text-[#2c2e3a]">
             Entendemos que la comunicación fluida y accesible es clave para una experiencia de huésped excepcional. 
             Es por eso que hemos implementado nuestra avanzada Plataforma de Asistencia Omnicanal, diseñada para 
             asegurar que cada interacción con nosotros sea sencilla, rápida y eficiente, sin importar el canal que elijas.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-[#2c2e3a]">
             Nuestro chatbot de IA, integrado en esta plataforma, te ofrece asistencia instantánea 24/7 a través de 
             múltiples canales de comunicación. Ya sea que prefieras enviar un mensaje de texto, usar WhatsApp, 
             interactuar a través de redes sociales o simplemente necesitar ayuda en nuestra página web, MARIA está 
@@ -85,34 +85,34 @@ interface ExpandableSectionProps {
         </ExpandableSection>
   
         <ExpandableSection title="¿Cómo funciona MARIA?">
-          <p className="mb-4">
+          <p className="mb-4 text-[#2c2e3a]">
             MARIA es una herramienta tecnológica avanzada diseñada para simplificar y optimizar el proceso de reserva 
             de habitaciones en tu hotel. Gracias a la inteligencia artificial, este asistente puede interactuar contigo 
             en tiempo real, proporcionando un servicio eficiente y personalizado las 24 horas del día, los 7 días de la semana.
           </p>
-          <ul className="list-disc pl-6 mb-4">
-            <li className="mb-2"><strong>Interacción Instantánea:</strong> Solo envía un mensaje con tus preferencias de viaje, 
+          <ul className="list-disc pl-6 mb-4 text-[#2c2e3a]">
+            <li className="mb-2 text-[#2c2e3a]"><strong>Interacción Instantánea:</strong> Solo envía un mensaje con tus preferencias de viaje, 
             y el asistente te mostrará opciones de habitaciones, precios y ofertas especiales adecuadas a tus necesidades.</li>
-            <li className="mb-2"><strong>Reservas Fáciles y Rápidas:</strong> Puedes completar tu reserva directamente a través 
+            <li className="mb-2 text-[#2c2e3a]"><strong>Reservas Fáciles y Rápidas:</strong> Puedes completar tu reserva directamente a través 
             de este sistema interactivo sin necesidad de llamadas telefónicas o esperas prolongadas.</li>
-            <li><strong>Soporte Continuo:</strong> Desde preguntas sobre tu reserva hasta cambios de última hora, nuestro 
+            <li className="text-[#2c2e3a]"><strong>Soporte Continuo:</strong> Desde preguntas sobre tu reserva hasta cambios de última hora, nuestro 
             asistente está aquí para ayudarte en cada paso.</li>
           </ul>
         </ExpandableSection>
   
         <ExpandableSection title="Beneficios para tu Hotel">
-          <p className="mb-4">
+          <p className="mb-4 text-[#2c2e3a]">
             Esta integración de tecnología no solo optimiza tus interacciones con tus huéspedes, sino que también asegura 
             que recibirás más likes de tus instalaciones. Con MARIA aseguras que cada momento del huésped sea tan relajado 
             y disfrutable como solo ellos lo merecen.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-[#2c2e3a]">
             El objetivo de MARIA es hacer que planificar la estancia de los huéspedes sea tan relajante como sus vacaciones mismas. 
             Esta herramienta no solo mejora la eficiencia de las operaciones de los hoteles, sino que también asegura que cada 
             huésped reciba atención inmediata y personalizada, mejorando su experiencia general y fomentando una mayor 
             satisfacción del cliente.
           </p>
-          <p>
+          <p className="mb-4 text-[#2c2e3a]">
             Tu hotel necesita aumentar las reservas, y MARIA te dice cómo hacerlo, ofreciendo una experiencia de reserva 
             sin igual que atrae y retiene a más huéspedes.
           </p>
